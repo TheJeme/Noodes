@@ -43,5 +43,26 @@ namespace Noodes
         {
             this.DragMove();
         }
+        private void TxtEditor_PreviewMouseWheel(object sender, MouseWheelEventArgs e) //Changes the fontsize
+        {
+            if (e.Delta > 0 && Keyboard.Modifiers == ModifierKeys.Control)
+                try
+                {
+                    txtBox.FontSize += 1;
+                }
+                catch (Exception)
+                {
+                    return;
+                }
+            else if (e.Delta < 0 && Keyboard.Modifiers == ModifierKeys.Control)
+                try
+                {
+                    txtBox.FontSize -= 1;
+                }
+                catch (Exception)
+                {
+                    return;
+                }
+        }
     }
 }
