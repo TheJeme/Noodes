@@ -8,10 +8,6 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Noodes
 {
@@ -45,24 +41,24 @@ namespace Noodes
         }
         private void TxtEditor_PreviewMouseWheel(object sender, MouseWheelEventArgs e) //Changes the fontsize
         {
-            if (e.Delta > 0 && Keyboard.Modifiers == ModifierKeys.Control)
-                try
-                {
-                    txtBox.FontSize += 1;
-                }
-                catch (Exception)
-                {
-                    return;
-                }
-            else if (e.Delta < 0 && Keyboard.Modifiers == ModifierKeys.Control)
-                try
-                {
-                    txtBox.FontSize -= 1;
-                }
-                catch (Exception)
-                {
-                    return;
-                }
+        if (e.Delta > 0 && Keyboard.Modifiers == ModifierKeys.Control)
+            try
+            {
+                txtBox.FontSize += 1;
+            }
+            catch (Exception)
+            {
+                return;
+            }
+        else if (e.Delta < 0 && Keyboard.Modifiers == ModifierKeys.Control)
+            try
+            {
+                txtBox.FontSize -= 1;
+            }
+            catch (Exception)
+            {
+                return;
+            }
         }
     }
 }

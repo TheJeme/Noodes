@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Noodes"
         mc:Ignorable="d"
         WindowStyle="None" AllowsTransparency="True"
-        Background="LightYellow"
+        Background="LightGoldenrodYellow"
         Topmost="True"
         Title="MainWindow" Height="250" Width="350" MouseLeftButtonDown="Window_MouseLeftButtonDown" MinWidth="200" MinHeight="100" MaxWidth="800" MaxHeight="700">
     <WindowChrome.WindowChrome>
@@ -17,7 +17,7 @@
         GlassFrameThickness="0">
         </WindowChrome>
     </WindowChrome.WindowChrome>
-    
+
     <Window.Resources>
         <ControlTemplate x:Key="ButtonTemplate" TargetType="Button">
             <Border Name="Border">
@@ -35,20 +35,22 @@
         <Label FontSize="16">Noodes</Label>
         <Button x:Name="closeButton" Grid.Row="0" Margin="0" HorizontalAlignment="Right" Focusable="False" IsTabStop="False" Template="{StaticResource ButtonTemplate}"
                 Click="CloseButton_Click">
-            <Image Source="D:\KOODAUS\C#\Work In Progress\Noodes/close1.png" Height="30"/>
+            <Image Source="pack://application:,,,/close1.png" Height="30"/>
         </Button>
         <Button x:Name="minimizeButton" Grid.Row="0" Margin="40,0" HorizontalAlignment="Right" Focusable="False" IsTabStop="False" Template="{StaticResource ButtonTemplate}"
                 Click="MinimizeButton_Click">
-            <Image Source="D:\KOODAUS\C#\Work In Progress\Noodes/minimize1.png" Height="30"/>
+            <Image Source="pack://application:,,,/minimize1.png" Height="30"/>
         </Button>
         <Button x:Name="newButton" Grid.Row="0" Margin="0,0,80,0" HorizontalAlignment="Right" Focusable="False" IsTabStop="False" Template="{StaticResource ButtonTemplate}"
                 Click="NewButton_Click">
-            <Image Source="D:\KOODAUS\C#\Work In Progress\Noodes/new1.png" Height="30"/>
+            <Image Source="pack://application:,,,/new1.png" Height="30"/>
         </Button>
 
-        
-        
-        <TextBox x:Name="txtBox" Grid.Row="1" FontSize="14" AcceptsReturn="True" AcceptsTab="True" Margin="5" TextWrapping="Wrap" Text="" PreviewMouseWheel="TxtEditor_PreviewMouseWheel">
+
+
+        <TextBox SelectionOpacity="0.5" CaretBrush="Gray"
+                 x:Name="txtBox" Grid.Row="1" FontSize="14" AcceptsReturn="True" AcceptsTab="True" Margin="5"
+                 TextWrapping="Wrap" Text="" PreviewMouseWheel="TxtEditor_PreviewMouseWheel">
             <TextBox.Background>
                 <SolidColorBrush Color="Black" Opacity="0" />
             </TextBox.Background>
