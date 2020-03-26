@@ -5,14 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Noodes"
         mc:Ignorable="d"
-        WindowStyle="None" AllowsTransparency="True"
+        WindowStyle="None"
+        AllowsTransparency="True"
         Background="LightGoldenrodYellow"
         Topmost="True"
-        Title="MainWindow" Height="250" Width="350" MouseLeftButtonDown="Window_MouseLeftButtonDown" MinWidth="200" MinHeight="100" MaxWidth="800" MaxHeight="700">
+        Title="Noodes"
+        Height="250" Width="350"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MinWidth="200" MinHeight="100"
+        Icon="Resources/noodes.ico">
     <WindowChrome.WindowChrome>
         <WindowChrome     
         CaptionHeight="1"  
-        CornerRadius="0"
+        CornerRadius="5"
         ResizeBorderThickness="4"         
         GlassFrameThickness="0">
         </WindowChrome>
@@ -35,15 +40,27 @@
         <Label FontSize="16">Noodes</Label>
         <Button x:Name="closeButton" Grid.Row="0" Margin="0" HorizontalAlignment="Right" Focusable="False" IsTabStop="False" Template="{StaticResource ButtonTemplate}"
                 Click="CloseButton_Click">
-            <Image Source="pack://application:,,,/close1.png" Height="30"/>
+            <Image Source="Resources/close1.png" Height="30"/>
         </Button>
-        <Button x:Name="minimizeButton" Grid.Row="0" Margin="40,0" HorizontalAlignment="Right" Focusable="False" IsTabStop="False" Template="{StaticResource ButtonTemplate}"
+        <Button x:Name="minimizeButton"
+                Grid.Row="0"
+                Margin="70,0"
+                HorizontalAlignment="Right"
+                Focusable="False" 
+                IsTabStop="False" 
+                Template="{StaticResource ButtonTemplate}"
                 Click="MinimizeButton_Click">
-            <Image Source="pack://application:,,,/minimize1.png" Height="30"/>
+            <Image Source="Resources/minimize1.png" Height="30"/>
         </Button>
-        <Button x:Name="newButton" Grid.Row="0" Margin="0,0,80,0" HorizontalAlignment="Right" Focusable="False" IsTabStop="False" Template="{StaticResource ButtonTemplate}"
+        <Button x:Name="newButton"
+                Grid.Row="0"
+                Margin="35,0"
+                HorizontalAlignment="Right"
+                Focusable="False"
+                IsTabStop="False"
+                Template="{StaticResource ButtonTemplate}"
                 Click="NewButton_Click">
-            <Image Source="pack://application:,,,/new1.png" Height="30"/>
+            <Image Source="Resources/new1.png" Height="30"/>
         </Button>
 
 

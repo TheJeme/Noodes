@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 
 namespace Noodes
@@ -25,10 +18,12 @@ namespace Noodes
         {
             this.Close();
         }
+
         private void MinimizeButton_Click(object sender, RoutedEventArgs e) //Minimizes the window
         {
             this.WindowState = WindowState.Minimized;
         }
+
         private void NewButton_Click(object sender, RoutedEventArgs e) //Minimizes the window
         {
             MainWindow win2 = new MainWindow();
@@ -39,6 +34,7 @@ namespace Noodes
         {
             this.DragMove();
         }
+
         private void TxtEditor_PreviewMouseWheel(object sender, MouseWheelEventArgs e) //Changes the fontsize
         {
         if (e.Delta > 0 && Keyboard.Modifiers == ModifierKeys.Control)
