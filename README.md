@@ -5,7 +5,7 @@
 
 ## Download
 
-Not done yet
+[Download](https://github.com/TheJeme/Noodes/releases/ "Noodes") the latest version.
 
 ## License
 
