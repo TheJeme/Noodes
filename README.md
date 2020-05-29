@@ -1,5 +1,5 @@
 # Noodes
-> Noodes is notes app.
+> Noodes is a note app.
 
 ![](https://i.imgur.com/IYUth5l.png)
 
